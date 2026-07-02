@@ -20,9 +20,14 @@ body{
     font-family: var(--body-font);
     background-color: var(--light-bg);
     min-height: 100vh;
- 
+    line-height: 1.6;
+     display: flex;
+    flex-direction: column;
 }
-
+img {
+    max-width: 100%;
+    height: auto;
+}
 header{
 
     display:grid;
@@ -31,7 +36,7 @@ header{
     
 }
 
-header span{
+#course-title{
    font-family: var(--heading-font);
     display: block;
     text-align: center;
@@ -39,7 +44,7 @@ header span{
     font-weight: bold;
 }
 nav{
-    border: var(--border);
+    border: 1px solid var(--border);
     display:flex;
     justify-content: space-around;
     align-items: center;
@@ -54,7 +59,7 @@ nav a {
     font-weight: bold;
 
     padding: 15px 25px;
-    transition: 0.3s;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav a:hover {
@@ -64,7 +69,7 @@ nav a:hover {
 }
 
 main{
-  
+  flex: 1;
     max-width: 1200px;
     margin: 0 auto;
     margin-top:20px;
@@ -85,6 +90,8 @@ main h1 {
     padding: 20px;
     font-size: 20px;
     border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    overflow: hidden;
 }
 .card h2 {
     background-color: var(--primary-color);
