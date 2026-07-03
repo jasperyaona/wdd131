@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'Roboto';
     src: url('../fonts/Roboto-Regular.woff2') format('woff2');
     font-weight: 400;
@@ -14,7 +14,7 @@
     font-family: 'Merriweather';
     src: url('../fonts/Merriweather-Bold.woff2') format('woff2');
     font-weight: 700;
-}
+} */
 
 
 :root {
@@ -25,8 +25,8 @@
     --light-bg: #F8FAFC;
     --border: #E5E7EB;
 
-    --heading-font: 'Merriweather', serif;
-    --body-font: 'Roboto', sans-serif;
+     --heading-font: "Georgia", "Times New Roman", serif;
+    --body-font: Arial, Helvetica, sans-serif;
 }
 
  * {
