@@ -1,22 +1,3 @@
-/* @font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/Roboto-Regular.woff2') format('woff2');
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/Roboto-Bold.woff2') format('woff2');
-    font-weight: 700;
-}
-
-@font-face {
-    font-family: 'Merriweather';
-    src: url('../fonts/Merriweather-Bold.woff2') format('woff2');
-    font-weight: 700;
-} */
-
-
 :root {
     --primary-color: #1B4965;
     --secondary-color: #ffffff;
@@ -24,23 +5,21 @@
     --highlight: #BC6C25;
     --light-bg: #F8FAFC;
     --border: #E5E7EB;
-
-     --heading-font: "Georgia", "Times New Roman", serif;
+    --heading-font: "Georgia", "Times New Roman", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
-
- * {
+* {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-    }
+}
 
 body{
     font-family: var(--body-font);
     background-color: var(--light-bg);
     min-height: 100vh;
     line-height: 1.6;
-     display: flex;
+    display: flex;
     flex-direction: column;
 }
 img {
@@ -48,15 +27,13 @@ img {
     height: auto;
 }
 header{
-
     display:grid;
     grid-column:1/3 ;
-    grid-template-rows: 60px 60px;
-    
+    grid-template-rows: 60px 60px;  
 }
 
 #course-title{
-   font-family: var(--heading-font);
+    font-family: var(--heading-font);
     display: block;
     text-align: center;
     line-height: 60px;
@@ -76,9 +53,8 @@ nav a {
     color: var(--light-bg);
     font-size: 18px;
     font-weight: bold;
-
     padding: 15px 25px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav a:hover {
@@ -88,13 +64,12 @@ nav a:hover {
 }
 
 main{
-  flex: 1;
+    flex: 1;
     max-width: 1200px;
     margin: 0 auto;
     margin-top:20px;
     margin-bottom: 30px;
     padding: 20px;
-
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 20px;
