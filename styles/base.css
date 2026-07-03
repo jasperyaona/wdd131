@@ -8,12 +8,11 @@
     --heading-font: "Georgia", "Times New Roman", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
-* {
+*{
       margin: 0;
       padding: 0;
       box-sizing: border-box;
 }
-
 body{
     font-family: var(--body-font);
     background-color: var(--light-bg);
@@ -31,7 +30,6 @@ header{
     grid-column:1/3 ;
     grid-template-rows: 60px 60px;  
 }
-
 #course-title{
     font-family: var(--heading-font);
     display: block;
@@ -47,7 +45,6 @@ nav{
     height: 60px;
     background-color: var(--primary-color);
 }
-
 nav a {
     text-decoration: none;
     color: var(--light-bg);
@@ -56,13 +53,11 @@ nav a {
     padding: 15px 25px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-
 nav a:hover {
     background-color: #BC6C25;
     color: var(--light-bg);
     border-radius: 5px;
 }
-
 main{
     flex: 1;
     max-width: 1200px;
@@ -99,60 +94,48 @@ main h1 {
     gap: 20px;
     padding: 20px;
 }
-
 .about {
     padding: 20px;
 }
-
 .about img {
     float: right;
     width: 180px;
     margin-left: 20px;
     margin-bottom: 10px;
 }
-
 .country {
     margin-top: 30px;
 }
-
 .country h3 {
     text-align: center;
     margin-bottom: 15px;
 }
-
 .country-info {
     display: grid;
     grid-template-columns: 150px 1fr;
     gap: 20px;
     align-items: start;
 }
-
 .country-info img {
     width: 150px;
 }
-
 .resources ul {
     margin-top:50px;
     padding-left: 25px;
 }
-
 .resources li {
     margin-bottom: 12px;
 }
-
 .resources a {
     text-decoration: none;
     color: var(--primary-color);
     font-weight: bold;
     transition: 0.3s;
 }
-
 .resources a:hover {
     color: var(--highlight);
     text-decoration: underline;
 }
-
-
 footer {
     padding-top:20px;
     padding-bottom:20px;
