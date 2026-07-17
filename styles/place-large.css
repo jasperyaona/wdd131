@@ -1,0 +1,36 @@
+@media screen and (min-width:700px){
+
+main{
+    position:relative;
+}
+
+.hero img{
+    height:80vh;
+    object-fit:cover;
+}
+
+.data{
+    position:absolute;
+
+    top:2rem;
+    left:2rem;
+
+    width:250px;
+}
+
+.weather{
+    position:absolute;
+
+    right:2rem;
+    bottom:2rem;
+
+    width:250px;
+}
+
+.weather h2::after{
+    content:" ⛅";
+}
+.weather-icon {
+    display: none;
+}
+}
