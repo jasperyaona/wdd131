@@ -1,5 +1,5 @@
 
-
+//Calculatess Windchill
 const temperature = 5;
 const windSpeed = 10;   
 
@@ -17,7 +17,8 @@ const windChill = document.querySelector("#windchill");
 
 
 if (temperature <= 10 && windSpeed > 4.8) {
-    windChill.textContent = `${calculateWindChill(temperature, windSpeed)} °C`;
+   const chill = calculateWindChill(temperature, windSpeed);
+    windChill.textContent = `${chill} °C`;  
 } else {
     windChill.textContent = "N/A";
 }
