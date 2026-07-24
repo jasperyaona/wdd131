@@ -100,6 +100,7 @@ function displayTemples(temples){
 	for (const temple of temples)
 	{
 		const card = document.createElement("card");
+		card.classList.add("card");
 
 		const name = document.createElement("h3");
 		const location = document.createElement("p");
@@ -110,7 +111,7 @@ function displayTemples(temples){
 		name.textContent = temple.templeName;
 		location.innerHTML = `<strong>Location:</strong> ${temple.location}`;
 		dedicated.innerHTML = `<strong>Dedicated:</strong> ${temple.dedicated}`;
-		area.innerHTML = `<strong>Area:</strong> ${temple.area.toLocaleString()} sq fr`;
+		area.innerHTML = `<strong>Area:</strong> ${temple.area.toLocaleString()} sq ft`;
 
 		image.src = temple.imageUrl;
 		image.alt = temple.templeName;
